@@ -1,4 +1,4 @@
-# BTC Price — GNOME Shell Extension
+# Bitcoin Price — GNOME Shell Extension
 
 A minimal GNOME Shell extension that shows the current Bitcoin price in your top panel, updated every 60 seconds.
 
