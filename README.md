@@ -8,7 +8,7 @@ A minimal GNOME Shell extension that shows the current Bitcoin price in your top
 
 - Live BTC/USD price via the [Coinbase API](https://docs.cloud.coinbase.com/sign-in-with-coinbase/docs/api-prices)
 - Updates every 60 seconds
-- Shows `BTC: --` on network error rather than crashing
+- Shows the price in thousands with 2 decimal points
 - No dependencies beyond GNOME Shell
 
 ## Screenshot
