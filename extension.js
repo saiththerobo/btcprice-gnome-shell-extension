@@ -5,7 +5,7 @@ import Clutter from 'gi://Clutter';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 
-export default class HelloExtension extends Extension {
+export default class BTCExtension extends Extension {
     enable() {
         this._label = new St.Label({
             text: '...',
@@ -31,7 +31,7 @@ export default class HelloExtension extends Extension {
                 const price = (parseFloat(json.data.amount) / 1000).toFixed(2);
                 this._label.set_text(price);
             } catch(e) {
-                log(`hello@local error: ${e}`);
+                log(`btcprice@gnome error: ${e}`);
             }
         });
     }
