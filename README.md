@@ -48,7 +48,3 @@ Copy `extension.js` and `metadata.json` to:
 gnome-extensions disable btcprice@gnome
 rm -rf ~/.local/share/gnome-shell/extensions/btcprice@gnome
 ```
-
-## License
-
-MIT
