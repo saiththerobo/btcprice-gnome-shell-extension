@@ -19,8 +19,8 @@ A minimal GNOME Shell extension that shows the current Bitcoin price in your top
 ## Install
 
 ```bash
-git clone https://github.com/yourusername/btcprice-gnome-extension
-cd btcprice-gnome-extension
+git clone https://github.com/saiththerobo/btcprice-gnome-shell-extension
+cd btcprice-gnome-shell-extension
 chmod +x install.sh
 ./install.sh
 ```
