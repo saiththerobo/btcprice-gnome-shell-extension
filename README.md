@@ -13,7 +13,7 @@ A minimal GNOME Shell extension that shows the current Bitcoin price in your top
 
 ## Screenshot
 
-<img width="640" height="360" alt="Screenshot From 2026-03-16 17-08-41" src="https://github.com/user-attachments/assets/2b7b3a7e-87cb-40c7-84fd-05580f0dad58" />
+<img width="320" height="180" alt="Screenshot From 2026-03-16 17-08-41" src="https://github.com/user-attachments/assets/2b7b3a7e-87cb-40c7-84fd-05580f0dad58" />
 
 
 
