@@ -1,0 +1,6 @@
+{
+  "name": "BTC Price",
+  "description": "Shows the current Bitcoin price in the GNOME top panel, updated every 60 seconds via the Coinbase API.",
+  "uuid": "btcprice@gnome",
+  "shell-version": ["48"]
+}
