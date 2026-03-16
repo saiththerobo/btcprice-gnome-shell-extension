@@ -11,6 +11,12 @@ A minimal GNOME Shell extension that shows the current Bitcoin price in your top
 - Shows `BTC: --` on network error rather than crashing
 - No dependencies beyond GNOME Shell
 
+## Screenshot
+
+<img width="640" height="360" alt="Screenshot From 2026-03-16 17-08-41" src="https://github.com/user-attachments/assets/2b7b3a7e-87cb-40c7-84fd-05580f0dad58" />
+
+
+
 ## Requirements
 
 - GNOME Shell 48
