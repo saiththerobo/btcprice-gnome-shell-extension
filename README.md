@@ -1,21 +1,12 @@
-# Bitcoin Price — GNOME Shell Extension
+# BTC Price — GNOME Shell Extension
 
-A minimal GNOME Shell extension that shows the current Bitcoin price in your top panel, updated every 60 seconds.
+A minimal GNOME Shell extension that displays the current Bitcoin price in your top panel, pulled from the Coinbase API and refreshed every 60 seconds.
 
-![Panel showing ₿ $84,231](https://img.shields.io/badge/GNOME%20Shell-48-blue)
-
-## Features
-
-- Live BTC/USD price via the [Coinbase API](https://docs.cloud.coinbase.com/sign-in-with-coinbase/docs/api-prices)
-- Updates every 60 seconds
-- Shows the price in thousands with 2 decimal points
-- No dependencies beyond GNOME Shell
+![GNOME Shell 48](https://img.shields.io/badge/GNOME%20Shell-48-blue)
 
 ## Screenshot
 
-<img width="320" height="180" alt="Screenshot From 2026-03-16 17-08-41" src="https://github.com/user-attachments/assets/2b7b3a7e-87cb-40c7-84fd-05580f0dad58" />
-
-
+<img width="320" height="180" alt="BTC price shown in the GNOME top panel" src="https://github.com/user-attachments/assets/2b7b3a7e-87cb-40c7-84fd-05580f0dad58" />
 
 ## Requirements
 
@@ -37,10 +28,14 @@ Then enable the extension:
 gnome-extensions enable btcprice@gnome
 ```
 
-**On Wayland:** log out and back in after installing.  
-**On X11:** press `Alt+F2`, type `r`, press `Enter` to restart the shell.
+To apply the extension without rebooting:
 
-## Manual Install
+- **Wayland:** log out and back in
+- **X11:** press `Alt+F2`, type `r`, press `Enter`
+
+Alternatively, search for **BTC Price** in the Extensions app.
+
+### Manual install
 
 Copy `extension.js` and `metadata.json` to:
 
@@ -48,9 +43,19 @@ Copy `extension.js` and `metadata.json` to:
 ~/.local/share/gnome-shell/extensions/btcprice@gnome/
 ```
 
+Then enable it as above.
+
 ## Uninstall
 
 ```bash
 gnome-extensions disable btcprice@gnome
 rm -rf ~/.local/share/gnome-shell/extensions/btcprice@gnome
 ```
+
+## How it works
+
+The extension polls the [Coinbase spot price API](https://docs.cloud.coinbase.com/sign-in-with-coinbase/docs/api-prices) once per minute. On a network failure it retries after 5 seconds; on a Coinbase-side error it waits for the next regular tick. No third-party dependencies — only what ships with GNOME Shell.
+
+## License
+
+[MIT](LICENSE)
